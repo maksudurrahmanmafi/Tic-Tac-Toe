@@ -241,7 +241,7 @@ class _GameScreenState extends State<GameScreen>
       if (checkWinner(currentPlayer)) {
         winner = widget.isAi
             ? (currentPlayer == widget.playerSide ? 'YOU WIN 🥳' : 'AI WINS 🤖💥')
-            : (currentPlayer == widget.playerSide ? 'YOU WIN 🥳' : 'OPPONENT WIN 💥');
+            : (currentPlayer == widget.playerSide ? 'YOU WIN 🥳' : 'PLAYER 2 WIN 💥');
 
         if (currentPlayer == widget.playerSide) playerScore++;
         else aiScore++;
